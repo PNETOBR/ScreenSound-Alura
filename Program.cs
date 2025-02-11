@@ -4,7 +4,7 @@ using ScreenSound03.Models;
 Banda ira = new ("Ira");
 ira.AdicionarNota(new Avaliacao(10));
 ira.AdicionarNota(new Avaliacao(6));
-ira.AdicionarNota(new Avaliacao(4));
+ira.AdicionarNota(new Avaliacao(5));
 
 Banda beatles = new("The Beatles");
 
