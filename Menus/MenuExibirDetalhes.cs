@@ -15,10 +15,15 @@ internal class MenuExibirDetalhes : Menu
             {
                 Banda banda = bandasRegistradas[nomeDaBanda];
                 Console.WriteLine($"\nA média da banda {nomeDaBanda} é {banda.Media}.");
-                /**
-                * ESPAÇO RESERVADO PARA COMPLETAR A FUNÇÃO
-                */
-                Console.WriteLine("Digite uma tecla para votar ao menu principal");
+                Console.WriteLine("\nDiscografia: ");
+                foreach (Album album in banda.Albuns)
+                {
+                    Console.WriteLine($"O album {album.Nome} -> {album.Media}.");
+                }
+
+
+
+                Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
                 Console.ReadKey();
                 Console.Clear();
 
@@ -26,7 +31,7 @@ internal class MenuExibirDetalhes : Menu
             else
             {
                 Console.WriteLine($"\nA banda {nomeDaBanda} não foi encontrada!");
-                Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+                Console.WriteLine("\nDigite uma tecla para voltar ao menu principal");
                 Console.ReadKey();
                 Console.Clear();
 

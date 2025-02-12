@@ -5,6 +5,7 @@ internal class Banda : IAvaliavel
     private List<Album> albuns = new List<Album>();
     private List<Avaliacao> notas = new List<Avaliacao>();
 
+
     public Banda(string nome)
     {
         Nome = nome;
@@ -30,6 +31,7 @@ internal class Banda : IAvaliavel
     {
         notas.Add(nota);
     }
+
 
     public void ExibirDiscografia()
     {
